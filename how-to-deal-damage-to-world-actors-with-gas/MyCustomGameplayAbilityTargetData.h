@@ -4,7 +4,7 @@
 #include "MyCustomGameplayAbilityTargetData.generated.h"
 
 USTRUCT()
-struct PUNKIN_API FMyCustomGameplayAbilityTargetData : public FGameplayAbilityTargetData
+struct FMyCustomGameplayAbilityTargetData : public FGameplayAbilityTargetData
 {
 	GENERATED_BODY()
 
