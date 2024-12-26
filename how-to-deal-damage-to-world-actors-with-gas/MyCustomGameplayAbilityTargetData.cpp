@@ -9,7 +9,7 @@ TArray<FActiveGameplayEffectHandle> FMyCustomGameplayAbilityTargetData::ApplyGam
 	for (const TWeakObjectPtr<AActor>& TargetActor : GetActors())
 	{
 		AGameplayActor* GameplayActor = Cast<AGameplayActor>(TargetActor);
-		if (GameplayActor != nullptr && GameplayActor->GetAbilitySystemComponent() == nullptr)
+		if (GameplayActor != nullptr && GameplayActor->AbilitySystemComponent == nullptr)
 		{
 			GameplayActor->InitializeAbilitySystem();
 		}

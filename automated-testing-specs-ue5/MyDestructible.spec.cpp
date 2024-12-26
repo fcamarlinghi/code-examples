@@ -38,14 +38,14 @@ void FExampleSpec::Define()
 
 		It("Should not explode when dealt zero damage", [this]()
 		{
-			MyDestructible->Damage(0.0);
-			TestFalse("HasExploded", MyDestructible->HasExploded());
+			DestructibleFixture->Damage(0.0);
+			TestFalse("HasExploded", DestructibleFixture->HasExploded());
 		});
 
 		It("Should explode when dealt damage", [this]()
 		{
-			MyDestructible->Damage(1.0);
-			TestTrue("HasExploded", MyDestructible->HasExploded());
+			DestructibleFixture->Damage(1.0);
+			TestTrue("HasExploded", DestructibleFixture->HasExploded());
 		});
 	});
 }
